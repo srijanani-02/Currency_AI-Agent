@@ -1,0 +1,144 @@
+[
+    {
+        "role": "user",
+        "content": "tell me about india"
+    },
+    {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+            {
+                "type": "function",
+                "index": 0,
+                "id": "tool_get_country_info_4IAtKLZGSlXiDVcxkBeT",
+                "function": {
+                    "name": "get_country_info",
+                    "arguments": "{\"country\":\"India\"}"
+                }
+            }
+        ]
+    },
+    {
+        "role": "tool",
+        "tool_call_id": "tool_get_country_info_4IAtKLZGSlXiDVcxkBeT",
+        "name": "get_country_info",
+        "content": "Country Information Error: 0"
+    },
+    {
+        "role": "assistant",
+        "content": "I am sorry, I cannot fulfill this request. There was an error retrieving country information.",
+        "refusal": null,
+        "reasoning": null
+    },
+    {
+        "role": "user",
+        "content": "tell me about us"
+    },
+    {
+        "role": "assistant",
+        "content": "I can help you with that! What country are you referring to when you say \"us\"?",
+        "refusal": null,
+        "reasoning": null
+    },
+    {
+        "role": "user",
+        "content": "USA"
+    },
+    {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+            {
+                "type": "function",
+                "index": 0,
+                "id": "tool_get_country_info_HLdmWC5BCTnRnjYmnYj4",
+                "function": {
+                    "name": "get_country_info",
+                    "arguments": "{\"country\":\"United States\"}"
+                }
+            }
+        ]
+    },
+    {
+        "role": "tool",
+        "tool_call_id": "tool_get_country_info_HLdmWC5BCTnRnjYmnYj4",
+        "name": "get_country_info",
+        "content": "Country Information Error: 0"
+    },
+    {
+        "role": "assistant",
+        "content": "I am sorry, I cannot fulfill this request. There was an error retrieving country information.",
+        "refusal": null,
+        "reasoning": null
+    },
+    {
+        "role": "user",
+        "content": "Convert 100 USD to INR"
+    },
+    {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+            {
+                "type": "function",
+                "index": 0,
+                "id": "tool_convert_currency_GpxjUGAZiRldZTdrFYkn",
+                "function": {
+                    "name": "convert_currency",
+                    "arguments": "{\"from_currency\":\"USD\",\"to_currency\":\"INR\",\"amount\":100}"
+                }
+            }
+        ]
+    },
+    {
+        "role": "tool",
+        "tool_call_id": "tool_convert_currency_GpxjUGAZiRldZTdrFYkn",
+        "name": "convert_currency",
+        "content": "\ud83d\udcb1 Currency Conversion\n\n\ud83d\udcb5 100 USD\n\u2b07\ufe0f\n\ud83d\udcb0 9440.00 INR"
+    },
+    {
+        "role": "assistant",
+        "content": "\nHere is the conversion for 100 USD to INR:\n\n100 USD = 9440.00 INR",
+        "refusal": null,
+        "reasoning": null
+    },
+    {
+        "role": "user",
+        "content": "44$ to inr"
+    },
+    {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": null,
+        "tool_calls": [
+            {
+                "type": "function",
+                "index": 0,
+                "id": "tool_convert_currency_B72nEFyvW23NVUg7DJPf",
+                "function": {
+                    "name": "convert_currency",
+                    "arguments": "{\"to_currency\":\"INR\",\"from_currency\":\"USD\",\"amount\":44}"
+                }
+            }
+        ]
+    },
+    {
+        "role": "tool",
+        "tool_call_id": "tool_convert_currency_B72nEFyvW23NVUg7DJPf",
+        "name": "convert_currency",
+        "content": "\ud83d\udcb1 Currency Conversion\n\n\ud83d\udcb5 44 USD\n\u2b07\ufe0f\n\ud83d\udcb0 4153.83 INR"
+    },
+    {
+        "role": "assistant",
+        "content": "\n44 USD is equivalent to 4153.83 INR.",
+        "refusal": null,
+        "reasoning": null
+    }
+]
